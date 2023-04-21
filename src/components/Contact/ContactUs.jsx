@@ -1,69 +1,8 @@
-import { useState } from "react";
-import { emailPattern } from "../utilities";
+import { socialMedia } from "../utilities";
+import logo3 from "../../img/logo3.JPG";
 import "./contact.css";
 
 function ContactUs() {
-  const [errors, setErrors] = useState({
-    name: false,
-    email: false,
-    description: false,
-  });
-  const [fullname, setFullname] = useState("");
-  const [email, setEmail] = useState("");
-  const [description, setDescription] = useState("");
-  const handleSubmit = () => {
-    const result = validateErrors();
-    if (!result) return false;
-    alert("Submitted!"); //TODO: Send data to mail
-    // resetData();
-  };
-  const resetData = () => {
-    setFullname("");
-    setEmail("");
-    setDescription("");
-    setErrors({ name: false, email: false, description: false });
-  };
-
-  const updateData = (input, value) => {
-    switch (input) {
-      case "name":
-        setFullname(value);
-        setErrors({ ...errors, name: false });
-        return;
-      case "email":
-        setEmail(value);
-        setErrors({ ...errors, email: false });
-        return;
-      case "description":
-        setDescription(value);
-        setErrors({ ...errors, description: false });
-        return;
-      default:
-        return false;
-    }
-  };
-
-  const validateErrors = () => {
-    let err = false;
-    if (!fullname || fullname.length < 1) {
-      setErrors({ ...errors, name: true });
-      err = true;
-    }
-    if (!email || email.length < 1) {
-      setErrors({ ...errors, email: true });
-      err = true;
-    }
-    if (!emailPattern.test(email)) {
-      setErrors({ ...errors, email: true });
-      err = true;
-    }
-    if (!description || description.length < 1) {
-      setErrors({ ...errors, description: true });
-      err = true;
-    }
-    return !err;
-  };
-
   return (
     <div className="contactus">
       <h1>Contact Us</h1>
@@ -81,36 +20,18 @@ function ContactUs() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="form">
-          <h4>Contact Us</h4>
-          <div className="fields">
-            <input
-              className={errors.name ? "error" : ""}
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              value={fullname}
-              onInput={(e) => updateData("name", e.target.value)}
-            />
-            <input
-              className={errors.email ? "error" : ""}
-              type="email"
-              name="email"
-              placeholder="Enter email id"
-              value={email}
-              onInput={(e) => updateData("email", e.target.value)}
-            />
-            <textarea
-              className={errors.description ? "error" : ""}
-              onInput={(e) => updateData("description", e.target.value)}
-              value={description}
-              name="description"
-              cols="10"
-              rows="10"
-              placeholder="Enter description"
-            ></textarea>
+        <div className="social">
+          <h4>Connect with Us</h4>
+          <img src={logo3} className="banner" alt="Contact Us Logo" />
+          <div className="accounts">
+            {socialMedia.map((item, idx) => {
+              return (
+                <a key={idx} href={item.url} target="__blank">
+                  <img src={item.imgUrl} alt="Social Media" />
+                </a>
+              );
+            })}
           </div>
-          <button onClick={() => handleSubmit()}>Submit</button>
         </div>
       </div>
     </div>

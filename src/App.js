@@ -6,6 +6,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import Optometrist from "./components/Optometrist/Optometrist";
 import Gallary from "./components/Gallary";
 import ContactUs from "./components/Contact/ContactUs";
+import Footer from "./components/Footer/Footer";
 
 const Services = React.lazy(() => import("./components/Services/Services"));
 
@@ -26,6 +27,7 @@ function App() {
       <Gallary />
       <Optometrist />
       <ContactUs />
+      <Footer />
     </div>
   );
 }

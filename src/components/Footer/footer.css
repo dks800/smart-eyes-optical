@@ -1,0 +1,28 @@
+.footer {
+  padding: 0 50px;
+  background-color: #ffffff;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #ffffff 50px
+    ),
+    repeating-linear-gradient(#e8e8e855, #e8e8e8);
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.footer .right img {
+  height: 250px;
+}
+
+.footer .left {
+  line-height: 5px;
+  text-align: left;
+  font-size: 14px;
+}

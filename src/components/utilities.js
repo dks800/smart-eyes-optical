@@ -15,6 +15,12 @@ import gallary8 from "../img/gallary8.jpg";
 import gallary9 from "../img/gallary9.jpg";
 import gallary10 from "../img/gallary10.jpg";
 import gallary11 from "../img/gallary11.jpg";
+import call from "../img/social/call.png";
+import fb from "../img/social/fb.webp";
+import gmail from "../img/social/gmail.png";
+import insta from "../img/social/insta.webp";
+import wa from "../img/social/whatsapp.png";
+import yt from "../img/social/yt.png";
 
 export const emailPattern = /\S+@\S+\.\S+/;
 
@@ -57,4 +63,31 @@ export const gallaryImages = [
   gallary9,
   gallary10,
   gallary11,
+];
+
+export const socialMedia = [
+  {
+    imgUrl: fb,
+    url: "https://www.facebook.com/842958123gyan",
+  },
+  {
+    imgUrl: insta,
+    url: "https://instagram.com/gyan.paliwal?igshid=YmMyMTA2M2Y=",
+  },
+  {
+    imgUrl: wa,
+    url: "https://wa.me/+919727622278",
+  },
+  {
+    imgUrl: yt,
+    url: "https://www.youtube.com",
+  },
+  {
+    imgUrl: gmail,
+    url: "mailto:deksharma800@gmail.com",
+  },
+  {
+    imgUrl: call,
+    url: "tel:+919727622278",
+  },
 ];

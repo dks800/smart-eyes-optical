@@ -6,66 +6,38 @@
   flex-wrap: wrap;
 }
 
-.contactus .container .form {
-  width: 40vw;
-}
-
-.contactus .container .form .fields {
+.contactus .container .map,
+.contactus .container .social,
+.contactus .container .social > div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
+  width: 40vw;
+  flex-wrap: wrap;
 }
 
-.contactus .container .form .fields > * {
-  width: 50%;
-  border: 1px solid darkgray;
+.contactus .container .social .banner {
+  width: 100%;
+  object-fit: cover;
   border-radius: 10px;
-  font-family: "Poppins";
-  padding: 10px 20px;
+  margin-bottom: 20px;
+  user-select: none;
 }
 
-.contactus .container .form .fields input {
-  height: 25px;
+.contactus .container .social > div {
+  flex-direction: row;
+  justify-content: center;
 }
 
-.contactus .container .form .fields textarea {
-  resize: none;
+.contactus .container .social .accounts img {
+  height: 40px;
+  transition: all 0.2s ease-in-out;
 }
 
-.contactus .container .form button {
-  height: 50px;
-  width: 55%;
-  margin: 20px 0;
-  background: #0089ff73;
-  border-radius: 10px;
-  border: 1px darkgray solid;
-  position: relative;
-  overflow: hidden;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.contactus .container .form button:hover::before {
-  width: 105%;
-}
-
-.contactus .container .form button::before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  background: #006fcfcf;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 0 20px 20px 0;
-  transition: all 0.5s ease-in-out;
-  z-index: -1;
-}
-
-.contactus .container .error {
-  border: 1px solid red !important;
-  background: #ff00000f;
+.contactus .container .social a:hover img {
+  transform: translateY(-5px);
+  filter: drop-shadow(2px 4px 1px gray);
+  scale: 1.5;
 }
