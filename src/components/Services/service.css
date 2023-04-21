@@ -1,0 +1,56 @@
+.services.container {
+  height: 800px;
+}
+
+.services.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.services.container .content .card {
+  padding: 10px;
+  cursor: pointer;
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  background-image: linear-gradient(315deg, #b97bc9 0%, #a7d9d9 74%);
+  animation: slideIn 1s;
+}
+
+.services.container .content .card:hover .image > img {
+  transform: translateY(-20%);
+  box-shadow: 2px 8px 10px 0px #838383;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services.container .content .image {
+  padding-top: 10px;
+}
+
+.services.container .content .image > img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.logo {
+  background: url("../../img/logo1.JPG") no-repeat fixed;
+  height: 400px;
+  margin: 50px 0;
+  background-size: 100vw;
+}

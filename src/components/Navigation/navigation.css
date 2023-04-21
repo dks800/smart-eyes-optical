@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  height: 70px;
+}
+
+.navigation > div {
+  text-transform: uppercase;
+  color: #222;
+  cursor: pointer;
+  border-bottom: 4px transparent solid;
+}
+
+.navigation > div:hover {
+  border-bottom: 4px solid #a4a3f3;
+}
+
+.navigation > img {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation .language::before {
+  content: url("../../img/lang-icon.png");
+}

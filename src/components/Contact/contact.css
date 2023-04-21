@@ -1,0 +1,71 @@
+.contactus .container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contactus .container .form {
+  width: 40vw;
+}
+
+.contactus .container .form .fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactus .container .form .fields > * {
+  width: 50%;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  font-family: "Poppins";
+  padding: 10px 20px;
+}
+
+.contactus .container .form .fields input {
+  height: 25px;
+}
+
+.contactus .container .form .fields textarea {
+  resize: none;
+}
+
+.contactus .container .form button {
+  height: 50px;
+  width: 55%;
+  margin: 20px 0;
+  background: #0089ff73;
+  border-radius: 10px;
+  border: 1px darkgray solid;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contactus .container .form button:hover::before {
+  width: 105%;
+}
+
+.contactus .container .form button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #006fcfcf;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 20px 20px 0;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.contactus .container .error {
+  border: 1px solid red !important;
+  background: #ff00000f;
+}

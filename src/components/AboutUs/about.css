@@ -1,0 +1,17 @@
+.about-us.container {
+  padding: 20px 10vw;
+}
+
+.about-us.container > div {
+  text-align: justify;
+}
+
+.about-us.container img {
+  height: 250px;
+  position: absolute;
+  right: 0;
+}
+
+.about-us.container .text-content {
+  width: 65vw;
+}
