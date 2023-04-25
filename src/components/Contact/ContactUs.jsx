@@ -26,7 +26,12 @@ function ContactUs() {
           <div className="accounts">
             {socialMedia.map((item, idx) => {
               return (
-                <a key={idx} href={item.url} target="__blank">
+                <a
+                  key={idx}
+                  href={item.url}
+                  target="__blank"
+                  style={{ "--hover-color": item.color }}
+                >
                   <img src={item.imgUrl} alt="Social Media" />
                 </a>
               );

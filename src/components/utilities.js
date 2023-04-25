@@ -69,25 +69,31 @@ export const socialMedia = [
   {
     imgUrl: fb,
     url: "https://www.facebook.com/842958123gyan",
+    color: "#1877f2",
   },
   {
     imgUrl: insta,
     url: "https://instagram.com/gyan.paliwal?igshid=YmMyMTA2M2Y=",
+    color: "#db2c78",
   },
   {
     imgUrl: wa,
     url: "https://wa.me/+919727622278",
+    color: "#4ecc5c",
   },
   {
     imgUrl: yt,
     url: "https://www.youtube.com",
+    color: "#ff0000",
   },
   {
     imgUrl: gmail,
     url: "mailto:deksharma800@gmail.com",
+    color: "#ea4335",
   },
   {
     imgUrl: call,
     url: "tel:+919727622278",
+    color: "#1b1c1f",
   },
 ];

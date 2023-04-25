@@ -4,6 +4,11 @@
 
 .about-us.container > div {
   text-align: justify;
+  margin: 30px 0;
+}
+
+.about-us.container > video {
+  border-radius: 10px;
 }
 
 .about-us.container img {

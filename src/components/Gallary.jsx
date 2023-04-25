@@ -4,7 +4,7 @@ import "../../node_modules/react-responsive-carousel/lib/styles/carousel.css";
 
 function Gallary() {
   return (
-    <div className="gallary.container">
+    <div className="gallary container">
       <h1>Gallary</h1>
       <Carousel showArrows={true}>
         {gallaryImages.map((img, idx) => {
