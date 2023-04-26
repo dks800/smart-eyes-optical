@@ -6,13 +6,24 @@ import { Link } from "react-router-dom";
 export default function Navigation() {
   return (
     <div className="navigation">
-      <img src={logo} alt="Logo" height="50" loading="lazy" />
-      <div>EYEGLASSES</div>
-      <div>SUNGLASSES</div>
-      <div>CONTACT LENSES</div>
-      <div>LENS</div>
-      <div>BRANDS</div>
-      <div>EYE EXAM</div>
+      <Link to="/">
+        <img src={logo} alt="Logo" height="50" loading="lazy" />{" "}
+      </Link>
+      <div>
+        <Link to="/eyewear/1">EYEGLASSES</Link>
+      </div>
+      <div>
+        <Link to="/eyewear/2">SUNGLASSES</Link>
+      </div>
+      <div>
+        <Link to="/eyewear/3">CONTACT LENSES</Link>
+      </div>
+      <div>
+        <Link to="/brands">BRANDS</Link>
+      </div>
+      <div>
+        <Link to="/exam">EYE EXAM</Link>
+      </div>
       <aside className="language">
         <select>
           <option>English</option>

@@ -1,22 +1,27 @@
 import logo2 from "../../img/logo-mobile.png";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
   const middleFooterData = [
     {
       title: "Eyewear",
-      items: ["Women's", "Men's", "Kids"],
+      items: [
+        { path: "/eyewear/1", title: "Eyeglasses" },
+        { path: "/eyewear/2", title: "Sunglasses" },
+        { path: "/eyewear/3", title: "Contact Lens" },
+      ],
     },
     {
       title: "Brands",
       items: [
-        "Hugo Boss",
-        "Mont Blanc",
-        "D&G",
-        "Prada",
-        "Tom Ford",
-        "Tomy Hilfiger",
-        "Fastrack",
+        { path: "/brands/hugo", title: "Hugo Boss" },
+        { path: "/brands/montblanc", title: "Mont Blanc" },
+        { path: "/brands/dng", title: "D&G" },
+        { path: "/brands/prada", title: "Prada" },
+        { path: "/brands/tomford", title: "Tom Ford" },
+        { path: "/brands/tommy", title: "Tommy Hilfiger" },
+        { path: "/brands/fastrack", title: "Fastrack" },
       ],
     },
   ];
@@ -56,7 +61,7 @@ function Footer() {
                     {data?.items?.map((item, id) => {
                       return (
                         <li key={id} title={item}>
-                          <a href={item}>{item}</a>
+                          <Link to={item.path}>{item.title}</Link>
                         </li>
                       );
                     })}

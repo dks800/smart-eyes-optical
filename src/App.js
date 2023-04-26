@@ -1,18 +1,26 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import { RouterProvider } from "react-router";
-import router from "./components/router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./Homepage";
+import Eyewear from "./components/Eyewear/Eyewear";
+import Brands from "./components/Brands/Brands";
+import EyeExam from "./components/Eye Exam/EyeExam";
 
 function App() {
   return (
     <>
-      <Header />
       <div className="App">
-        <RouterProvider router={router} />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" exact Component={Homepage} />
+            <Route path="/eyewear" Component={Eyewear} />
+            <Route path="/eyewear/:type" Component={Eyewear} />
+            <Route path="/brands" Component={Brands} />
+            <Route path="/brands/:brand" Component={Brands} />
+            <Route path="/exam" Component={EyeExam} />
+          </Routes>
+        </BrowserRouter>
       </div>
-      <Footer />
     </>
   );
 }

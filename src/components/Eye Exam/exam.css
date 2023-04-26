@@ -1,0 +1,35 @@
+.eye-exam .content .show img {
+  height: 80vh;
+  cursor: grab;
+  border-radius: 10px;
+}
+
+.eye-exam .exam-types img {
+    height: 100px;
+}
+
+.eye-exam .exam-types {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.eye-exam .exam-types > div{
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    background: #f7f7f7;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.eye-exam .exam-types > div > * {
+    margin: 5px 0;
+}
+.eye-exam .exam-types > div > p {
+    text-align: justify;
+}
