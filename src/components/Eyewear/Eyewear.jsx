@@ -9,7 +9,7 @@ function Eyewear() {
   return (
     <>
       <Header />
-      <div>
+      <div className="eye-wear container">
         <h1>Eyewear</h1>
       </div>
       <Footer />

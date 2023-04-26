@@ -15,6 +15,7 @@
   justify-content: space-between;
   width: 100%;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .footer .right img {
@@ -47,7 +48,6 @@
 .footer .middle {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   text-align: left;
   gap: 10px;
   min-width: 20%;
@@ -67,4 +67,21 @@
 
 .footer .middle > div > h5 {
   padding: 0 5px;
+}
+
+.footer .container > * {
+  width: 29vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 0;
+  }
+
+  .footer .container > * {
+    width: 90vw;
+  }
+  .footer .container .left > * {
+    white-space: break-spaces;
+  }
 }

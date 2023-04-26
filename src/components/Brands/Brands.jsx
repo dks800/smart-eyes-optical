@@ -9,7 +9,7 @@ function Brands() {
   return (
     <>
       <Header />
-      <div className="brands">
+      <div className="brands container">
         <h1>Brands</h1>
       </div>
       <Footer />

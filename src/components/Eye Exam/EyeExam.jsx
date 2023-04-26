@@ -21,7 +21,7 @@ function EyeExam() {
   return (
     <>
       <Header />
-      <div className="eye-exam">
+      <div className="eye-exam container">
         <h2>Eye Exam</h2>
         <div className="content">
           <div className="show">
