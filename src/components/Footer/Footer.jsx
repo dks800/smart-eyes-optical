@@ -55,12 +55,12 @@ function Footer() {
           {middleFooterData?.length > 0 &&
             middleFooterData.map((data, idx) => {
               return (
-                <div className={data.title} key={idx}>
+                <div key={idx}>
                   <h5>{data.title}</h5>
                   <ul>
                     {data?.items?.map((item, id) => {
                       return (
-                        <li key={id} title={item}>
+                        <li key={id} title={item.title}>
                           <Link to={item.path}>{item.title}</Link>
                         </li>
                       );

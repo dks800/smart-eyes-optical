@@ -5,31 +5,46 @@
 }
 
 .eye-exam .exam-types img {
-    height: 100px;
+  height: 100px;
 }
 
 .eye-exam .exam-types {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.eye-exam .exam-types > div{
-    width: 200px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 14px;
-    background: #f7f7f7;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px gray;
+.eye-exam .exam-types > div {
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  background: #fff;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 15%;
+}
+
+.eye-exam .exam-types > div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.eye-exam .exam-types > div > img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 .eye-exam .exam-types > div > * {
-    margin: 5px 0;
+  margin: 5px 0;
 }
-.eye-exam .exam-types > div > p {
-    text-align: justify;
+
+.eye-exam .content .text-content .footer-note {
+  margin: 50px auto;
+  width: 90vw;
+  text-align: justify;
 }

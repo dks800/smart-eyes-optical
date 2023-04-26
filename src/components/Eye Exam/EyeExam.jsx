@@ -38,13 +38,13 @@ function EyeExam() {
           <div className="text-content">
             <p>
               With highly advance equipments at
-              <strong>Smart Eyes Optical</strong>, we diagnose patients with
+              <strong> Smart Eyes Optical</strong>, we diagnose patients with
               various tests as follows:
             </p>
             <div className="exam-types">
               {examTypes?.map((exam, idx) => {
                 return (
-                  <div>
+                  <div key={idx}>
                     <img src={exam.logo} alt="Exam Logo" />
                     <h4>{exam.title}</h4>
                     <p>{exam.description}</p>
@@ -53,14 +53,15 @@ function EyeExam() {
               })}
             </div>
 
-            <p>
+            <p className="footer-note">
               After the exam, we discuss exam findings with the patient and
               recommend any necessary treatment or further testing. We may also
-              provide a prescription for glasses or contact lenses if needed.
-              <i>
+              provide a prescription for glasses or contact lenses if
+              needed.&nbsp;
+              <strong>
                 Regular eye exams are important for maintaining good eye health
-                and detecting any potential problems early on.
-              </i>
+                and detecting any potential problems early.
+              </strong>
             </p>
           </div>
         </div>
