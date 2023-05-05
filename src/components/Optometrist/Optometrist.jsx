@@ -7,7 +7,7 @@ function Optometrist() {
     <div className="optom container">
       <h1>Owner</h1>
       <div>
-        <img src={optom} alt="Optometrist" />
+        <img loading="lazy" src={optom} alt="Optometrist" />
         <h2>Gyan Paliwal</h2>
         <h3>Optometrist & Contact Lens Specialist</h3>
       </div>

@@ -4,17 +4,21 @@ import contactlense from "../img/contactlense.jpg";
 import eyewears from "../img/eyewear.jpg";
 import familycare from "../img/familycare.jpg";
 import eyeinfection from "../img/eyeinfection.jpg";
-import gallary1 from "../img/gallary1.jpg";
-import gallary2 from "../img/gallary2.jpg";
-import gallary3 from "../img/gallary3.jpg";
-import gallary4 from "../img/gallary4.jpg";
-import gallary5 from "../img/gallary5.jpg";
-import gallary6 from "../img/gallary6.jpg";
-import gallary7 from "../img/gallary7.jpg";
-import gallary8 from "../img/gallary8.jpg";
-import gallary9 from "../img/gallary9.jpg";
-import gallary10 from "../img/gallary10.jpg";
-import gallary11 from "../img/gallary11.jpg";
+import clinic1 from "../img/clinic/clinic1.jpg";
+import clinic2 from "../img/clinic/clinic5.jpg";
+import clinic3 from "../img/clinic/clinic7.jpg";
+import gallary1 from "../img/gallary/gallary1.jpg";
+import gallary2 from "../img/gallary/gallary2.jpg";
+import gallary3 from "../img/gallary/gallary3.jpg";
+import gallary4 from "../img/gallary/gallary4.jpg";
+import gallary5 from "../img/gallary/gallary5.jpg";
+import gallary6 from "../img/gallary/gallary6.jpg";
+import gallary7 from "../img/gallary/gallary7.jpg";
+import gallary8 from "../img/gallary/gallary8.jpg";
+import gallary9 from "../img/gallary/gallary9.jpg";
+import gallary10 from "../img/gallary/gallary10.jpg";
+import gallary11 from "../img/gallary/gallary11.jpg";
+import gallary12 from "../img/gallary/gallary12.jpg";
 import call from "../img/social/call.png";
 import fb from "../img/social/fb.webp";
 import gmail from "../img/social/gmail.png";
@@ -64,6 +68,9 @@ export const services = [
 ];
 
 export const gallaryImages = [
+  clinic1,
+  clinic2,
+  clinic3,
   gallary1,
   gallary2,
   gallary3,
@@ -75,6 +82,7 @@ export const gallaryImages = [
   gallary9,
   gallary10,
   gallary11,
+  gallary12,
 ];
 
 export const socialMedia = [

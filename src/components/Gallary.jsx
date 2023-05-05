@@ -10,7 +10,7 @@ function Gallary() {
         {gallaryImages.map((img, idx) => {
           return (
             <div key={idx}>
-              <img src={img} alt="Gallery" />
+              <img loading="lazy" src={img} alt="Gallery" />
             </div>
           );
         })}

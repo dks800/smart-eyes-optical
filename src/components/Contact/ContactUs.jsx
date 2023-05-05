@@ -22,7 +22,12 @@ function ContactUs() {
         </div>
         <div className="social">
           <h4>Connect with Us</h4>
-          <img src={logo3} className="banner" alt="Contact Us Logo" />
+          <img
+            loading="lazy"
+            src={logo3}
+            className="banner"
+            alt="Contact Us Logo"
+          />
           <div className="accounts">
             {socialMedia.map((item, idx) => {
               return (
@@ -32,7 +37,7 @@ function ContactUs() {
                   target="__blank"
                   style={{ "--hover-color": item.color }}
                 >
-                  <img src={item.imgUrl} alt="Social Media" />
+                  <img loading="lazy" src={item.imgUrl} alt="Social Media" />
                 </a>
               );
             })}

@@ -1,5 +1,6 @@
 import logo2 from "../../img/logo-mobile.png";
 import { Link } from "react-router-dom";
+import { brandNames } from "../data/brandData";
 import "./footer.css";
 
 function Footer() {
@@ -7,22 +8,14 @@ function Footer() {
     {
       title: "Eyewear",
       items: [
-        { path: "/eyewear/1", title: "Eyeglasses" },
-        { path: "/eyewear/2", title: "Sunglasses" },
-        { path: "/eyewear/3", title: "Contact Lens" },
+        { path: "/eyewear/1", name: "Eyeglasses" },
+        { path: "/eyewear/2", name: "Sunglasses" },
+        { path: "/eyewear/3", name: "Contact Lens" },
       ],
     },
     {
       title: "Brands",
-      items: [
-        { path: "/brands/hugo", title: "Hugo Boss" },
-        { path: "/brands/montblanc", title: "Mont Blanc" },
-        { path: "/brands/dng", title: "D&G" },
-        { path: "/brands/prada", title: "Prada" },
-        { path: "/brands/tomford", title: "Tom Ford" },
-        { path: "/brands/tommy", title: "Tommy Hilfiger" },
-        { path: "/brands/fastrack", title: "Fastrack" },
-      ],
+      items: brandNames,
     },
   ];
 
@@ -60,8 +53,8 @@ function Footer() {
                   <ul>
                     {data?.items?.map((item, id) => {
                       return (
-                        <li key={id} title={item.title}>
-                          <Link to={item.path}>{item.title}</Link>
+                        <li key={id} title={item.name}>
+                          <Link to={item.path}>{item.name}</Link>
                         </li>
                       );
                     })}
@@ -71,7 +64,7 @@ function Footer() {
             })}
         </div>
         <div className="right">
-          <img src={logo2} alt="Footer Logo" />
+          <img loading="lazy" src={logo2} alt="Footer Logo" />
         </div>
       </div>
     </div>

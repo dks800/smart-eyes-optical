@@ -1,0 +1,52 @@
+.brand-images {
+  display: flex;
+  font-size: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.brand-images img {
+  height: 120px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.brand-card {
+  width: 150px;
+}
+
+.image-header {
+  overflow: hidden;
+  height: 60px;
+}
+
+.brand-card:hover .image-header img {
+  transform: translateY(-60px);
+}
+
+.brand-names .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.brand-names .name img {
+  height: 2rem;
+  border-bottom: 1px #dedede solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.brand-names > div {
+  margin: 10px 20px;
+  border: 1px #dedede solid;
+  border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+  .brand-images {
+    gap: 10px;
+  }
+}

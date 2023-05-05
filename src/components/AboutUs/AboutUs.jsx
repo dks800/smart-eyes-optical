@@ -32,7 +32,7 @@ function AboutUs() {
           </p>
         </div>
       </div>
-      <video width={1000} controls muted={true}>
+      <video width={1000} controls muted={true} autoPlay>
         <source src={lenseVideo} type="video/webm"></source>
       </video>
     </div>

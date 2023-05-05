@@ -29,7 +29,7 @@ function EyeExam() {
               {examImages?.map((image, idx) => {
                 return (
                   <div key={idx}>
-                    <img src={image} alt="Eye Exam" />
+                    <img loading="lazy" src={image} alt="Eye Exam" />
                   </div>
                 );
               })}
@@ -44,8 +44,8 @@ function EyeExam() {
             <div className="exam-types">
               {examTypes?.map((exam, idx) => {
                 return (
-                  <div key={idx}>
-                    <img src={exam.logo} alt="Exam Logo" />
+                  <div key={idx} className="ui-card">
+                    <img loading="lazy" src={exam.logo} alt="Exam Logo" />
                     <h4>{exam.title}</h4>
                     <p>{exam.description}</p>
                   </div>

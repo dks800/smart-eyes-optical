@@ -7,6 +7,14 @@ import Brands from "./components/Brands/Brands";
 import EyeExam from "./components/Eye Exam/EyeExam";
 
 function App() {
+  /*
+    TODO:
+    1. Eye wear
+    2. Sunglasses
+    3. Contact Lens
+    4. Brands -
+    5. Eye Exam - To check Overflow in responsive mode
+  */
   return (
     <>
       <div className="App">
