@@ -9,11 +9,10 @@ import EyeExam from "./components/Eye Exam/EyeExam";
 function App() {
   /*
     TODO:
+    0. Navigation - Check responsive mode
     1. Eye wear
     2. Sunglasses
-    3. Contact Lens
-    4. Brands -
-    5. Eye Exam - To check Overflow in responsive mode
+    3. Contact Lens - In Progress
   */
   return (
     <>

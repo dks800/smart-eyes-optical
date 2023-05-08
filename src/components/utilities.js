@@ -9,12 +9,10 @@ import clinic2 from "../img/clinic/clinic5.jpg";
 import clinic3 from "../img/clinic/clinic7.jpg";
 import gallary1 from "../img/gallary/gallary1.jpg";
 import gallary2 from "../img/gallary/gallary2.jpg";
-import gallary3 from "../img/gallary/gallary3.jpg";
 import gallary4 from "../img/gallary/gallary4.jpg";
 import gallary5 from "../img/gallary/gallary5.jpg";
 import gallary6 from "../img/gallary/gallary6.jpg";
 import gallary7 from "../img/gallary/gallary7.jpg";
-import gallary8 from "../img/gallary/gallary8.jpg";
 import gallary9 from "../img/gallary/gallary9.jpg";
 import gallary10 from "../img/gallary/gallary10.jpg";
 import gallary11 from "../img/gallary/gallary11.jpg";
@@ -73,12 +71,10 @@ export const gallaryImages = [
   clinic3,
   gallary1,
   gallary2,
-  gallary3,
   gallary4,
   gallary5,
   gallary6,
   gallary7,
-  gallary8,
   gallary9,
   gallary10,
   gallary11,
