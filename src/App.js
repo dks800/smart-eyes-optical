@@ -5,6 +5,7 @@ import Homepage from "./Homepage";
 import Eyewear from "./components/Eyewear/Eyewear";
 import Brands from "./components/Brands/Brands";
 import EyeExam from "./components/Eye Exam/EyeExam";
+import ContactLens from "./components/Lens/ContactLens";
 
 function App() {
   /*
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" exact Component={Homepage} />
             <Route path="/eyewear" Component={Eyewear} />
-            <Route path="/eyewear/:type" Component={Eyewear} />
+            <Route path="/contact-lens" Component={ContactLens} />
             <Route path="/brands" Component={Brands} />
             <Route path="/brands/:brand" Component={Brands} />
             <Route path="/exam" Component={EyeExam} />

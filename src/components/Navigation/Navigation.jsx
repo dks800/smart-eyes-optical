@@ -10,13 +10,13 @@ export default function Navigation() {
         <img src={logo} alt="Logo" height="50" loading="lazy" />{" "}
       </Link>
       <div>
-        <Link to="/eyewear/1">EYEGLASSES</Link>
+        <Link to="/eyewear">EYEGLASSES</Link>
       </div>
       <div>
-        <Link to="/eyewear/2">SUNGLASSES</Link>
+        <Link to="/eyewear">SUNGLASSES</Link>
       </div>
       <div>
-        <Link to="/eyewear/3">CONTACT LENSES</Link>
+        <Link to="/contact-lens">CONTACT LENSES</Link>
       </div>
       <div>
         <Link to="/brands">BRANDS</Link>

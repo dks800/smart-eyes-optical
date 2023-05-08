@@ -4,20 +4,19 @@ import Services from "./components/Services/Services";
 import Gallary from "./components/Gallary";
 import Optometrist from "./components/Optometrist/Optometrist";
 import ContactUs from "./components/Contact/ContactUs";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import GeneralComponent from "./components/General/GeneralComponent";
 
 function Homepage() {
   return (
     <>
-      <Header />
-      <Dashboard />
-      <AboutUs />
-      <Services />
-      <Gallary />
-      <Optometrist />
-      <ContactUs />
-      <Footer />
+      <GeneralComponent>
+        <Dashboard />
+        <AboutUs />
+        <Services />
+        <Gallary />
+        <Optometrist />
+        <ContactUs />
+      </GeneralComponent>
     </>
   );
 }

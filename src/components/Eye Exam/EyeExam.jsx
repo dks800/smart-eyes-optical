@@ -1,5 +1,4 @@
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import GeneralComponent from "../General/GeneralComponent";
 import { examImages } from "../utilities";
 import Slider from "infinite-react-carousel";
 import "react-awesome-slider/dist/styles.css";
@@ -20,53 +19,53 @@ function EyeExam() {
 
   return (
     <>
-      <Header />
-      <div className="eye-exam container">
-        <h2>Eye Exam</h2>
-        <div className="content">
-          <div className="show">
-            <Slider {...settings}>
-              {examImages?.map((image, idx) => {
-                return (
-                  <div key={idx}>
-                    <img loading="lazy" src={image} alt="Eye Exam" />
-                  </div>
-                );
-              })}
-            </Slider>
-          </div>
-          <div className="text-content">
-            <p>
-              With highly advance equipments at
-              <strong> Smart Eyes Optical</strong>, we diagnose patients with
-              various tests as follows:
-            </p>
-            <div className="exam-types">
-              {examTypes?.map((exam, idx) => {
-                return (
-                  <div key={idx} className="ui-card">
-                    <img loading="lazy" src={exam.logo} alt="Exam Logo" />
-                    <h4>{exam.title}</h4>
-                    <p>{exam.description}</p>
-                  </div>
-                );
-              })}
+      <GeneralComponent>
+        <div className="eye-exam container">
+          <h2>Eye Exam</h2>
+          <div className="content">
+            <div className="show">
+              <Slider {...settings}>
+                {examImages?.map((image, idx) => {
+                  return (
+                    <div key={idx}>
+                      <img loading="lazy" src={image} alt="Eye Exam" />
+                    </div>
+                  );
+                })}
+              </Slider>
             </div>
+            <div className="text-content">
+              <p>
+                With highly advance equipments at
+                <strong> Smart Eyes Optical</strong>, we diagnose patients with
+                various tests as follows:
+              </p>
+              <div className="exam-types">
+                {examTypes?.map((exam, idx) => {
+                  return (
+                    <div key={idx} className="ui-card">
+                      <img loading="lazy" src={exam.logo} alt="Exam Logo" />
+                      <h4>{exam.title}</h4>
+                      <p>{exam.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
 
-            <p className="footer-note">
-              After the exam, we discuss exam findings with the patient and
-              recommend any necessary treatment or further testing. We may also
-              provide a prescription for glasses or contact lenses if
-              needed.&nbsp;
-              <strong>
-                Regular eye exams are important for maintaining good eye health
-                and detecting any potential problems early.
-              </strong>
-            </p>
+              <p className="footer-note">
+                After the exam, we discuss exam findings with the patient and
+                recommend any necessary treatment or further testing. We may
+                also provide a prescription for glasses or contact lenses if
+                needed.&nbsp;
+                <strong>
+                  Regular eye exams are important for maintaining good eye
+                  health and detecting any potential problems early.
+                </strong>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <Footer />
+      </GeneralComponent>
     </>
   );
 }

@@ -1,18 +1,14 @@
 import React from "react";
-import { useParams } from "react-router";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import GeneralComponent from "../General/GeneralComponent";
 
 function Eyewear() {
-  const type = useParams();
-  console.log(type);
   return (
     <>
-      <Header />
-      <div className="eye-wear container">
-        <h1>Eyewear</h1>
-      </div>
-      <Footer />
+      <GeneralComponent>
+        <div className="eye-wear container">
+          <h1>Eyewear</h1>
+        </div>
+      </GeneralComponent>
     </>
   );
 }
