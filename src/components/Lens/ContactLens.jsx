@@ -1,5 +1,6 @@
 import GeneralComponent from "../General/GeneralComponent";
 import { lensTypes } from "../utilities";
+import lens from "../../img/contact-lens/lens3.jpg";
 import "./lens.css";
 
 const ContactLens = () => {
@@ -9,6 +10,7 @@ const ContactLens = () => {
         <div className="contact-lens container">
           <h1>Contact Lens</h1>
           <div className="content">
+            <div className="lens"></div>
             {lensTypes?.map((lens, index) => {
               return (
                 <div className="lens-type" key={index}>

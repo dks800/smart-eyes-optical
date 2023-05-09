@@ -8,7 +8,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.sunglasses.container img:hover {
+.sunglasses.container .sunglass-list img:hover {
   scale: 1.05;
   box-shadow: 1px 2px 2px 0px #000000;
 }
