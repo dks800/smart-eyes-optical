@@ -13,7 +13,6 @@ function App() {
     0. Navigation - Check responsive mode
     1. Eye wear
     2. Sunglasses
-    3. Contact Lens - In Progress
   */
   return (
     <>
@@ -22,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" exact Component={Homepage} />
             <Route path="/eyewear" Component={Eyewear} />
+            <Route path="/sunglasses" Component={Eyewear} />
             <Route path="/contact-lens" Component={ContactLens} />
             <Route path="/brands" Component={Brands} />
             <Route path="/brands/:brand" Component={Brands} />

@@ -1,0 +1,53 @@
+.contact-lens.container {
+  padding: 20px;
+}
+
+.lens-type img {
+  height: 200px;
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.lens-type img:hover {
+  transform: translateY(-10px);
+}
+
+.lens-type {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 30px auto;
+  width: 70vw;
+  gap: 20px;
+  border-bottom: 1px dashed gray;
+  padding: 30px 0;
+  flex-direction: row;
+  border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+  .lens-type {
+    flex-wrap: wrap;
+    width: 85vw !important;
+  }
+  .lens-type > div {
+    text-align: center !important;
+  }
+}
+
+.lens-type:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.lens-type > div > h5 {
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.lens-type > div {
+  text-align: left;
+}
+
+.lens-type:nth-child(even) > div {
+  text-align: right;
+}
