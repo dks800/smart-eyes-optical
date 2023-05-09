@@ -13,7 +13,7 @@ export default function Navigation() {
         <Link to="/eyewear">EYEGLASSES</Link>
       </div>
       <div>
-        <Link to="/eyewear">SUNGLASSES</Link>
+        <Link to="/sunglasses">SUNGLASSES</Link>
       </div>
       <div>
         <Link to="/contact-lens">CONTACT LENSES</Link>

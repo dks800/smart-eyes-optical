@@ -159,3 +159,16 @@ export const lensTypes = [
       "High-index lenses are eyeglass lenses that are designed to be thinner and lighter than regular lenses. They are generally recommended for people who have significantly high refractive errors and strong prescriptions for nearsightedness, farsightedness, or astigmatism.",
   },
 ];
+
+export const sunglasses = [
+  importUrl.sunglass1,
+  importUrl.sunglass2,
+  importUrl.sunglass3,
+  importUrl.sunglass4,
+  importUrl.sunglass5,
+  importUrl.sunglass6,
+  importUrl.sunglass7,
+  importUrl.sunglass9,
+  importUrl.sunglass8,
+  importUrl.sunglass10,
+];

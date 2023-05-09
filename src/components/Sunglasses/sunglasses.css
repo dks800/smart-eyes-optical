@@ -1,0 +1,29 @@
+.sunglasses.container {
+  padding: 0 40px;
+  background: url("../../img/sunglasses/video1.mp4");
+}
+
+.sunglasses.container img {
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sunglasses.container img:hover {
+  scale: 1.05;
+  box-shadow: 1px 2px 2px 0px #000000;
+}
+
+.sunglass-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sunglasses video {
+  border-radius: 20px;
+}
+
+.anatomy {
+  margin: 40px 0;
+}

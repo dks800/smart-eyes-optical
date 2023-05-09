@@ -50,3 +50,11 @@ body {
     width: 25vw;
   }
 }
+
+.left-aligned {
+  text-align: left;
+}
+
+.center-aligned {
+  text-align: center;
+}

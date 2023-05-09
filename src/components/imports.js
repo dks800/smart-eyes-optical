@@ -1,9 +1,9 @@
-import eyeExam from "../img/testing.jpg";
-import diagnosis from "../img/diagnosis.jpg";
-import contactlense from "../img/contactlense.jpg";
+import eyeExam from "../img/services/testing.jpg";
+import diagnosis from "../img/services/diagnosis.jpg";
+import contactlense from "../img/services/contactlense.jpg";
 import eyewears from "../img/eyewear.jpg";
-import familycare from "../img/familycare.jpg";
-import eyeinfection from "../img/eyeinfection.jpg";
+import familycare from "../img/services/familycare.jpg";
+import eyeinfection from "../img/services/eyeinfection.jpg";
 import clinic1 from "../img/clinic/clinic1.jpg";
 import clinic2 from "../img/clinic/clinic5.jpg";
 import clinic3 from "../img/clinic/clinic7.jpg";
@@ -41,6 +41,16 @@ import bifocalLens from "../img/contact-lens/types/bifocal-lens.jpg";
 import antiReflect from "../img/contact-lens/types/anti-reflec.jpg";
 import photochromic from "../img/contact-lens/types/photochromic.jpg";
 import blueCut from "../img/contact-lens/types/blue-cut-lens.jpg";
+import sunglass1 from "../img/sunglasses/sunglass1.jpg";
+import sunglass2 from "../img/sunglasses/sunglass2.jpg";
+import sunglass3 from "../img/sunglasses/sunglass3.jpg";
+import sunglass4 from "../img/sunglasses/sunglass4.jpg";
+import sunglass5 from "../img/sunglasses/sunglass5.jpg";
+import sunglass6 from "../img/sunglasses/sunglass6.jpg";
+import sunglass7 from "../img/sunglasses/sunglass7.jpg";
+import sunglass8 from "../img/sunglasses/sunglass8.jpg";
+import sunglass9 from "../img/sunglasses/sunglass9.jpg";
+import sunglass10 from "../img/sunglasses/sunglass10.jpg";
 
 export const importUrl = {
   eyeExam,
@@ -86,4 +96,14 @@ export const importUrl = {
   antiReflect,
   photochromic,
   blueCut,
+  sunglass1,
+  sunglass2,
+  sunglass3,
+  sunglass4,
+  sunglass5,
+  sunglass6,
+  sunglass7,
+  sunglass10,
+  sunglass8,
+  sunglass9,
 };

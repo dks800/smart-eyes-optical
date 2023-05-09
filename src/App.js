@@ -6,6 +6,7 @@ import Eyewear from "./components/Eyewear/Eyewear";
 import Brands from "./components/Brands/Brands";
 import EyeExam from "./components/Eye Exam/EyeExam";
 import ContactLens from "./components/Lens/ContactLens";
+import Sunglasses from "./components/Sunglasses/Sunglasses";
 
 function App() {
   /*
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" exact Component={Homepage} />
             <Route path="/eyewear" Component={Eyewear} />
-            <Route path="/sunglasses" Component={Eyewear} />
+            <Route path="/sunglasses" Component={Sunglasses} />
             <Route path="/contact-lens" Component={ContactLens} />
             <Route path="/brands" Component={Brands} />
             <Route path="/brands/:brand" Component={Brands} />
