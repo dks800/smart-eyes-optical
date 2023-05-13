@@ -1,8 +1,11 @@
 import React from "react";
 import banner from "./../../img/family.jpg";
+import BannerItems from "./BannerItems";
+import { socialMedia } from "../utilities";
 import "./banner.css";
 
 export default function Dashboard() {
+  const phoneNumber = socialMedia[socialMedia?.length - 1]?.url;
   return (
     <div className="dashboard container">
       <div className="banner-name">
@@ -15,18 +18,15 @@ export default function Dashboard() {
           </p>
         </div>
         <div className="banner-buttons">
-          <button>Call Us</button>
+          <button>
+            <a href={phoneNumber}>Call Us</a>
+          </button>
         </div>
       </div>
       <div className="banner-hero">
         <img src={banner} alt="hero banner" loading="lazy" />
       </div>
-      <div className="banner-items">
-        <div>ABC</div>
-        <div>CDE</div>
-        <div>PQR</div>
-        <div>XYZ</div>
-      </div>
+      <BannerItems />
     </div>
   );
 }

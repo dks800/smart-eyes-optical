@@ -1,6 +1,6 @@
 import GeneralComponent from "../General/GeneralComponent";
 import { lensTypes } from "../utilities";
-import lens from "../../img/contact-lens/lens3.jpg";
+// import lens from "../../img/contact-lens/lens3.jpg";
 import "./lens.css";
 
 const ContactLens = () => {

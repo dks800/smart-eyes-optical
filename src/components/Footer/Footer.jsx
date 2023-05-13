@@ -8,9 +8,9 @@ function Footer() {
     {
       title: "Eyewear",
       items: [
-        { path: "/eyewear/1", name: "Eyeglasses" },
-        { path: "/eyewear/2", name: "Sunglasses" },
-        { path: "/eyewear/3", name: "Contact Lens" },
+        { path: "/eyewear", name: "Eyeglasses" },
+        { path: "/sunglasses", name: "Sunglasses" },
+        { path: "/contact-lens", name: "Contact Lens" },
       ],
     },
     {

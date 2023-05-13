@@ -48,32 +48,32 @@ export const gallaryImages = [
 export const socialMedia = [
   {
     imgUrl: importUrl.fb,
-    url: "https://www.facebook.com/842958123gyanimportUrl.",
+    url: "https://www.facebook.com/842958123gyan",
     color: "#1877f2",
   },
   {
     imgUrl: importUrl.insta,
-    url: "https://instagram.com/gyan.paliwal?igshid=YmMyMTA2M2YimportUrl.=",
+    url: "https://instagram.com/gyan.paliwal?igshid=YmMyMTA2M2Y=",
     color: "#db2c78",
   },
   {
     imgUrl: importUrl.wa,
-    url: "https://wa.me/+919727622278importUrl.",
+    url: "https://wa.me/+919727622278",
     color: "#4ecc5c",
   },
   {
     imgUrl: importUrl.yt,
-    url: "https://www.youtube.comimportUrl.",
+    url: "https://www.youtube.com",
     color: "#ff0000",
   },
   {
     imgUrl: importUrl.gmail,
-    url: "mailto:deksharma800@gmail.comimportUrl.",
+    url: "mailto:deksharma800@gmail.com",
     color: "#ea4335",
   },
   {
     imgUrl: importUrl.call,
-    url: "tel:+919727622278importUrl.",
+    url: "tel:+919727622278",
     color: "#1b1c1f",
   },
 ];
