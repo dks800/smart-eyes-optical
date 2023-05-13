@@ -1,14 +1,29 @@
 import React from "react";
-import aboutImg from "../../img/logo-board.png";
 import lenseVideo from "../../video/lense.webm";
+import { useState, useEffect } from "react";
 import "./about.css";
 
 function AboutUs() {
+  const [isWebDevice, setIsWebDevice] = useState(true);
+  const [imgUrl, setImgUrl] = useState(null);
+  useEffect(() => {
+    let width = window?.screen?.width;
+    if (width < 480) {
+      setIsWebDevice(false);
+    } else {
+      let url = require("../../img/logo-board.png");
+      console.log(url);
+      setImgUrl(url);
+    }
+  }, []);
+
   return (
     <div className="about-us container">
       <h1>About Us</h1>
       <div>
-        <img src={aboutImg} alt="about section" loading="lazy" />
+        {isWebDevice && imgUrl && (
+          <img src={imgUrl} alt="about section" loading="lazy" />
+        )}
         <div className="text-content">
           <p>
             Welcome to <strong>Smart Eyes Opticals</strong>, where our mission

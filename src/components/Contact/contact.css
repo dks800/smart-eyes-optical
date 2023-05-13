@@ -72,3 +72,20 @@
   height: 350px;
   background-size: 100vw;
 }
+
+@media (max-width: 480px) {
+  .contactus .container {
+    flex-direction: column !important;
+  }
+  .contactus .container .map,
+  .contactus .container .social,
+  .contactus .container .social > div {
+    width: 100% !important;
+  }
+  .contactus .container iframe {
+    width: 100% !important;
+  }
+  .contactus .container .social > div {
+    gap: 10px !important;
+  }
+}

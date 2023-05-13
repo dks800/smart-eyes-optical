@@ -6,7 +6,6 @@
   object-fit: cover;
   height: 85vh;
   width: 100%;
-  /* background: url("../../img/family.jpg") no-repeat fixed; */
 }
 
 .banner-name {
@@ -20,33 +19,38 @@
 
 .banner-name .title {
   letter-spacing: 6px;
-  animation: spacing6 1s ease-in;
-}
-
-@keyframes spacing6 {
-  from {
-    letter-spacing: 0px;
-  }
-
-  to {
-    letter-spacing: 6px;
-  }
-}
-
-@keyframes spacing30 {
-  from {
-    letter-spacing: 0px;
-  }
-
-  to {
-    letter-spacing: 30px;
-  }
 }
 
 .banner-name .name-trail {
   letter-spacing: 30px;
-  animation: spacing30 1s ease-in;
-  animation-delay: 0.5s;
+}
+
+@media (max-width: 480px) {
+  .banner-name .name-trail {
+    letter-spacing: 5px;
+  }
+  .banner-name {
+    width: 100vw;
+    text-align: center;
+  }
+  .banner-text {
+    width: auto !important;
+    padding: 0 !important;
+    text-align: justify;
+  }
+  .banner-buttons {
+    padding: 50px !important;
+  }
+  .banner-buttons > button {
+    height: 60px;
+    width: 50vw;
+    font-size: 20px;
+    background-color: #00000087 !important;
+  }
+  .banner-items > a {
+    width: auto !important;
+    min-height: 40px !important;
+  }
 }
 
 .banner-text {
@@ -54,6 +58,11 @@
   font-size: 1.1rem;
   font-family: revert;
   padding: 0 50px;
+}
+
+.banner-text > p {
+  background-color: #0000008e;
+  padding: 20px 10px;
 }
 
 .banner-buttons {
@@ -101,6 +110,7 @@
   position: absolute;
   bottom: -10px;
   font-size: 2rem;
+  flex-wrap: wrap;
 }
 
 .banner-items > a {

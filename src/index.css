@@ -6,9 +6,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container:not(:first-child) {
+/* .container:not(:first-child) {
   margin: 45px auto !important;
-}
+} */
 
 .ui-card {
   border-radius: 10px;

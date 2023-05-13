@@ -1,11 +1,11 @@
 export const bannerData = [
   {
     path: "/eyewear",
-    title: "EYEGLASSES",
+    title: "EYE GLASSES",
   },
   {
     path: "/sunglasses",
-    title: "SUNGLASSES",
+    title: "SUN GLASSES",
   },
   {
     path: "/contact-lens",

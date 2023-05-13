@@ -54,3 +54,9 @@
   margin: 50px 0;
   background-size: 100vw;
 }
+
+@media (max-width: 480px) {
+  .services.container .content {
+    gap: 10px !important;
+  }
+}
