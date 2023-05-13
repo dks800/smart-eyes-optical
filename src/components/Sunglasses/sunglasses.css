@@ -1,6 +1,5 @@
 .sunglasses.container {
   padding: 0 40px;
-  background: url("../../img/sunglasses/video1.mp4");
 }
 
 .sunglasses.container img {
@@ -26,4 +25,33 @@
 
 .anatomy {
   margin: 40px 0;
+}
+
+@media (max-width: 480px) {
+  .sunglasses.container {
+    padding: 0 10px 20px 10px !important;
+  }
+  .sunglasses video {
+    width: 90% !important;
+  }
+  .sunglasses.container img.anatomy,
+  .sunglasses.container .sunglass-list img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.title-container img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 17%;
+  transform: rotate(20deg);
+  top: 0;
 }

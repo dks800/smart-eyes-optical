@@ -41,6 +41,10 @@ import bifocalLens from "../img/contact-lens/types/bifocal-lens.jpg";
 import antiReflect from "../img/contact-lens/types/anti-reflec.jpg";
 import photochromic from "../img/contact-lens/types/photochromic.jpg";
 import blueCut from "../img/contact-lens/types/blue-cut-lens.jpg";
+import lens1 from "../img/contact-lens/lens1.jpg";
+import lens2 from "../img/contact-lens/lens2.jpg";
+import lens3 from "../img/contact-lens/lens3.jpg";
+import lens4 from "../img/contact-lens/lens4.jpg";
 import sunglass1 from "../img/sunglasses/sunglass1.jpg";
 import sunglass2 from "../img/sunglasses/sunglass2.jpg";
 import sunglass3 from "../img/sunglasses/sunglass3.jpg";
@@ -106,4 +110,8 @@ export const importUrl = {
   sunglass10,
   sunglass8,
   sunglass9,
+  lens1,
+  lens2,
+  lens3,
+  lens4,
 };

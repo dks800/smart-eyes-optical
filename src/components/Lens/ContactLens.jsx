@@ -1,16 +1,56 @@
+import { useState } from "react";
 import GeneralComponent from "../General/GeneralComponent";
 import { lensTypes } from "../utilities";
-// import lens from "../../img/contact-lens/lens3.jpg";
+import { useEffect } from "react";
+import mobileLens from "../../img/contact-lens/mobile-lens.mp4";
+import { lensImages } from "../utilities";
 import "./lens.css";
+import { Link } from "react-router-dom";
 
 const ContactLens = () => {
+  const [isWebDevice, setIsWebDevice] = useState(true);
+  useEffect(() => {
+    let width = window?.screen?.width;
+    if (width < 480) setIsWebDevice(false);
+  }, []);
+  const scrollDown = (e) => {
+    e.preventDefault();
+    let toBottom = document?.querySelector("body")?.offsetHeight;
+    window.scrollTo({ top: toBottom, behavior: "smooth" });
+  };
   return (
     <>
       <GeneralComponent>
         <div className="contact-lens container">
           <h1>Contact Lens</h1>
           <div className="content">
-            <div className="lens"></div>
+            {isWebDevice && <div className="lens"></div>}
+            <p>
+              <strong>GYAN</strong>, Optometrist at Smart Eyes Optical is
+              Contact Lens Specialist. He has over a decade of professional
+              experience in this field.
+            </p>
+            <p>
+              Get in touch at our branch to know about special offers for you.
+              <button className="scroll-down" onClick={(e) => scrollDown(e)}>
+                Click here
+              </button>
+            </p>
+            {!isWebDevice && (
+              <video
+                autoPlay={true}
+                loop
+                controls
+                muted={true}
+                src={mobileLens}
+              ></video>
+            )}
+            <div className="lens-images">
+              {lensImages?.map((lens, index) => {
+                return <img src={lens} key={index} alt="Lens" loading="lazy" />;
+              })}
+            </div>
+            <h2>Types of Eyewear Lens</h2>
             {lensTypes?.map((lens, index) => {
               return (
                 <div className="lens-type" key={index}>

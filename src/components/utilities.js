@@ -172,3 +172,10 @@ export const sunglasses = [
   importUrl.sunglass8,
   importUrl.sunglass10,
 ];
+
+export const lensImages = [
+  importUrl.lens1,
+  importUrl.lens2,
+  importUrl.lens3,
+  importUrl.lens4,
+];
