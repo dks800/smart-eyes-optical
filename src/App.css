@@ -57,3 +57,13 @@ h6 {
 iframe {
   border-radius: 10px;
 }
+
+@media (max-width: 480px) {
+  .carousel .slide img {
+    height: 200px !important;
+    object-fit: cover;
+  }
+  .gallary.container {
+    width: 90% !important;
+  }
+}

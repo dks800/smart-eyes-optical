@@ -1,7 +1,5 @@
 import { importUrl } from "./imports";
 
-export const emailPattern = /\S+@\S+\.\S+/;
-
 export const services = [
   {
     title: "Eye Test",
@@ -179,3 +177,8 @@ export const lensImages = [
   importUrl.lens3,
   importUrl.lens4,
 ];
+
+export const langUtils = {
+  english: "en",
+  portugese: "pt",
+};

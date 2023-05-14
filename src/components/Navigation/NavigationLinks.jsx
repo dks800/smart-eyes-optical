@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom";
 import { bannerData } from "../data/bannerData";
-import langIcon from "../../img/lang-icon.png";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { DeviceContext } from "../../DeviceContext";
 
-const NavigationLinks = () => {
-  const [isWebDevice, setIsWebDevice] = useState(true);
-  useEffect(() => {
-    let width = window?.screen?.width;
-    if (width < 480) setIsWebDevice(false);
-  }, []);
+const NavigationLinks = ({ lang }) => {
+  const isWebDevice = useContext(DeviceContext);
   return (
     <>
       {isWebDevice && (
@@ -16,17 +12,10 @@ const NavigationLinks = () => {
           {bannerData?.map((data, index) => {
             return (
               <div key={index}>
-                <Link to={data.path}>{data.title}</Link>
+                <Link to={data?.path}>{data?.title[lang]}</Link>
               </div>
             );
           })}
-          <div className="language" title="Change Language">
-            <img src={langIcon} alt="Language" loading="lazy" />
-            <select>
-              <option>English</option>
-              <option>Português</option>
-            </select>
-          </div>
         </>
       )}
     </>

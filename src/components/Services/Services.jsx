@@ -1,15 +1,11 @@
 import "./service.css";
 import Card from "./Card";
 import { services } from "../utilities";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { DeviceContext } from "../../DeviceContext";
 
 export default function Services() {
-  const [isWebDevice, setIsWebDevice] = useState(true);
-  useEffect(() => {
-    let width = window?.screen?.width;
-    if (width < 480) setIsWebDevice(false);
-  }, []);
-
+  const isWebDevice = useContext(DeviceContext);
   return (
     <div className="services container">
       <h1>Our Services</h1>

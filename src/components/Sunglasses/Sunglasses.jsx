@@ -3,24 +3,21 @@ import anatomy from "../../img/sunglasses/sunglasses-anatomy.jpg";
 import mobileVideo from "../../img/sunglasses/mobile-sunglass.mp4";
 import webVideo from "../../img/sunglasses/web-sunglass.mp4";
 import { sunglasses } from "../utilities";
-import "./sunglasses.css";
 import sunTitle from "../../img/sunglasses/title-sun.gif";
-import { useEffect, useState } from "react";
-import { useRef } from "react";
+import { useEffect, useRef, useContext } from "react";
+import { DeviceContext } from "../../DeviceContext";
+import "./sunglasses.css";
 
 const Sunglasses = () => {
-  const videRef = useRef(null);
-  const [isWebDevice, setIsWebDevice] = useState(null);
+  const videoRef = useRef(null);
+  const isWebDevice = useContext(DeviceContext);
   useEffect(() => {
-    let width = window?.screen?.width;
-    if (width < 480) {
-      videRef.current.src = mobileVideo;
-      setIsWebDevice(false);
+    if (!isWebDevice) {
+      videoRef.current.src = mobileVideo;
     } else {
-      videRef.current.src = webVideo;
-      setIsWebDevice(true);
+      videoRef.current.src = webVideo;
     }
-  }, []);
+  }, [isWebDevice]);
 
   return (
     <GeneralComponent>
@@ -32,7 +29,7 @@ const Sunglasses = () => {
 
         <div className="content">
           <video
-            ref={videRef}
+            ref={videoRef}
             autoPlay={true}
             loop
             controls

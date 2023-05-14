@@ -1,22 +1,37 @@
 export const bannerData = [
   {
     path: "/eyewear",
-    title: "EYE GLASSES",
+    title: {
+      en: "EYE GLASSES",
+      pt: "ÓCULOS",
+    },
   },
   {
     path: "/sunglasses",
-    title: "SUN GLASSES",
+    title: {
+      en: "SUN GLASSES",
+      pt: "OCULOS DE SOL",
+    },
   },
   {
     path: "/contact-lens",
-    title: "CONTACT LENSES",
+    title: {
+      en: "CONTACT LENSES",
+      pt: "LENTES DE CONTATO",
+    },
   },
   {
     path: "/brands",
-    title: "BRANDS",
+    title: {
+      en: "BRANDS",
+      pt: "MARCAS",
+    },
   },
   {
     path: "/exam",
-    title: "EYE EXAM",
+    title: {
+      en: "EYE EXAM",
+      pt: "EXAME ÓPTICO",
+    },
   },
 ];

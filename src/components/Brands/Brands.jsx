@@ -23,6 +23,11 @@ function Brands() {
       <GeneralComponent>
         <div className="brands container">
           <h1>Eyewear Brands</h1>
+          <p>
+            Smart Eyes Optical, has a wide range of branded products. The top
+            ranged brands are displayed below. You can choose your favorite
+            brand from our store.
+          </p>
           <div className="brand-marquee">
             <Marquee>
               {brandNames.map((brand, index) => {

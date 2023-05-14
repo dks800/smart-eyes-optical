@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import lenseVideo from "../../video/lense.webm";
-import { useState, useEffect } from "react";
+import mobileLenseVideo from "../../video/lense-mobile.webm";
+import { useState, useEffect, useContext } from "react";
+import { DeviceContext } from "../../DeviceContext";
 import "./about.css";
 
 function AboutUs() {
-  const [isWebDevice, setIsWebDevice] = useState(true);
+  let isWebDevice = useContext(DeviceContext);
   const [imgUrl, setImgUrl] = useState(null);
+  const vidRef = useRef(null);
   useEffect(() => {
-    let width = window?.screen?.width;
-    if (width < 480) {
-      setIsWebDevice(false);
-    } else {
+    if (!isWebDevice) {
       let url = require("../../img/logo-board.png");
-      console.log(url);
+      vidRef.current.src = mobileLenseVideo;
       setImgUrl(url);
+    } else {
+      vidRef.current.src = lenseVideo;
     }
-  }, []);
+  }, [isWebDevice]);
 
   return (
     <div className="about-us container">
@@ -47,9 +49,14 @@ function AboutUs() {
           </p>
         </div>
       </div>
-      <video width={1000} controls muted={true} autoPlay loop>
-        <source src={lenseVideo} type="video/webm"></source>
-      </video>
+      <video
+        ref={vidRef}
+        width={1000}
+        controls
+        muted={true}
+        autoPlay
+        loop
+      ></video>
     </div>
   );
 }

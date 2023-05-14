@@ -6,11 +6,13 @@ import "./footer.css";
 function Footer() {
   const middleFooterData = [
     {
-      title: "Eyewear",
+      title: "Navigation",
       items: [
-        { path: "/eyewear", name: "Eyeglasses" },
-        { path: "/sunglasses", name: "Sunglasses" },
+        { path: "/", name: "Home" },
+        { path: "/eyewear", name: "Eye Glasses" },
+        { path: "/sunglasses", name: "Sun Glasses" },
         { path: "/contact-lens", name: "Contact Lens" },
+        { path: "/exam", name: "Eye Exam" },
       ],
     },
     {

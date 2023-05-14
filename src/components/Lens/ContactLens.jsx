@@ -1,18 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import GeneralComponent from "../General/GeneralComponent";
 import { lensTypes } from "../utilities";
 import { useEffect } from "react";
 import mobileLens from "../../img/contact-lens/mobile-lens.mp4";
 import { lensImages } from "../utilities";
+import { DeviceContext } from "../../DeviceContext";
 import "./lens.css";
-import { Link } from "react-router-dom";
 
 const ContactLens = () => {
-  const [isWebDevice, setIsWebDevice] = useState(true);
-  useEffect(() => {
-    let width = window?.screen?.width;
-    if (width < 480) setIsWebDevice(false);
-  }, []);
+  const isWebDevice = useContext(DeviceContext);
   const scrollDown = (e) => {
     e.preventDefault();
     let toBottom = document?.querySelector("body")?.offsetHeight;
