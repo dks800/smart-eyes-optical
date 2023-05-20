@@ -18,9 +18,9 @@ export default function Dashboard() {
           <p>{dashboard?.banner[language]}</p>
         </div>
         <div className="banner-buttons">
-          <button>
-            <a href={phoneNumber}>{dashboard?.bannerButton[language]}</a>
-          </button>
+          <a href={phoneNumber}>
+            <button>{dashboard?.bannerButton[language]}</button>
+          </a>
         </div>
       </div>
       <div className="banner-hero">

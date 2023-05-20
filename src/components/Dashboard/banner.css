@@ -41,7 +41,7 @@
   .banner-buttons {
     padding: 50px !important;
   }
-  .banner-buttons > button {
+  .banner-buttons > a > button {
     height: 60px;
     width: 50vw;
     font-size: 20px;
@@ -69,12 +69,12 @@
   padding: 0 50px;
 }
 
-.banner-buttons > button > a {
+.banner-buttons > a > button {
   color: #fff;
   text-decoration: none;
 }
 
-.banner-buttons > button {
+.banner-buttons > a > button {
   border-radius: 50px;
   background-color: transparent;
   border: 2px solid #fff;
@@ -86,7 +86,7 @@
   transition: all 0.2s ease-out;
 }
 
-.banner-buttons > button:hover {
+.banner-buttons > a > button:hover {
   background-color: #ffffff38;
 }
 

@@ -16,10 +16,6 @@ import "./App.css";
     TODO:
     1. Eye wear - Pending
     2. Language:
-      i) Dashboard
-      ii) About US
-      iii) Services
-      iv) Gallary
       v) Optometrist
       vi) Contact US
       vii) Eyewear

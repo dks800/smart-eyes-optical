@@ -1,28 +1,51 @@
 import { importUrl } from "./imports";
 
+export const langUtils = {
+  english: "en",
+  portugese: "pt",
+};
+
 export const services = [
   {
-    title: "Eye Test",
+    title: {
+      [langUtils.english]: "Eye Test",
+      [langUtils.portugese]: "Teste ocular",
+    },
     url: importUrl.eyeExam,
   },
   {
-    title: "Diagnosis",
+    title: {
+      [langUtils.english]: "Diagnosis",
+      [langUtils.portugese]: "Diagnóstico",
+    },
     url: importUrl.diagnosis,
   },
   {
-    title: "Contact Lenses",
+    title: {
+      [langUtils.english]: "Contact Lenses",
+      [langUtils.portugese]: "Lentes de contato",
+    },
     url: importUrl.contactlense,
   },
   {
-    title: "Eyewears",
+    title: {
+      [langUtils.english]: "Eyewears",
+      [langUtils.portugese]: "Óculos",
+    },
     url: importUrl.eyewears,
   },
   {
-    title: "Family Care",
+    title: {
+      [langUtils.english]: "Family Care",
+      [langUtils.portugese]: "Cuidados Familiares",
+    },
     url: importUrl.familycare,
   },
   {
-    title: "Eye Infections",
+    title: {
+      [langUtils.english]: "Eye Infections",
+      [langUtils.portugese]: "Infecções oculares",
+    },
     url: importUrl.eyeinfection,
   },
 ];
@@ -177,8 +200,3 @@ export const lensImages = [
   importUrl.lens3,
   importUrl.lens4,
 ];
-
-export const langUtils = {
-  english: "en",
-  portugese: "pt",
-};
