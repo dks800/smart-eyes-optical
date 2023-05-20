@@ -55,3 +55,28 @@ export const gallary = {
     [langUtils.portugese]: "Galeria",
   },
 };
+
+export const optomLang = {
+  title: {
+    [langUtils.english]: "Owner",
+    [langUtils.portugese]: "Proprietário",
+  },
+  designation: {
+    [langUtils.english]: "Optometrist & Contact Lens Specialist",
+    [langUtils.portugese]: "Optometrista e especialista em lentes de contato",
+  },
+  content: [
+    {
+      [langUtils.english]:
+        "<strong>Gyan Paliwal </strong> is a healthcare professional who specializes in diagnosing and treating vision problems and contact lenses. He performs eye exams, prescribe corrective lenses, and provide other types of vision care. He is experienced in detecting and managing a wide range of eye conditions, including refractive errors (e.g. nearsightedness, farsightedness, astigmatism), binocular vision disorders, and ocular diseases (e.g. glaucoma, cataracts).",
+      [langUtils.portugese]:
+        "<strong>Gyan Paliwal </strong> é um profissional de saúde especializado no diagnóstico e tratamento de problemas de visão e lentes de contato. Ele realiza exames oftalmológicos, prescreve lentes corretivas e fornece outros tipos de cuidados com a visão. Ele tem experiência na detecção e gerenciamento de uma ampla gama de condições oculares, incluindo erros de refração (por exemplo, miopia, hipermetropia, astigmatismo), distúrbios da visão binocular e doenças oculares (por exemplo, glaucoma, catarata).",
+    },
+    {
+      [langUtils.english]:
+        "He also works closely with ophthalmologists, who are medical doctors specializing in eye care and surgery, to manage more complex eye conditions.",
+      [langUtils.portugese]:
+        "Ele também trabalha em estreita colaboração com oftalmologistas, que são médicos especializados em cuidados com os olhos e cirurgia, para lidar com condições oculares mais complexas.",
+    },
+  ],
+};

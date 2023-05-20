@@ -31,7 +31,12 @@ function AboutUs() {
         )}
         <div className="text-content">
           {aboutUs?.content?.map((data, index) => {
-            return <p dangerouslySetInnerHTML={{ __html: data[language] }}></p>;
+            return (
+              <p
+                key={index}
+                dangerouslySetInnerHTML={{ __html: data[language] }}
+              ></p>
+            );
           })}
         </div>
       </div>
