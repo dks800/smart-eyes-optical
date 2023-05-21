@@ -33,6 +33,10 @@ h6 {
   margin: auto;
 }
 
+.gallary.container img {
+  height: 200px;
+}
+
 .carousel.carousel-slider .control-arrow {
   background: rgb(0 0 0 / 15%) !important;
   border-radius: 10px;
