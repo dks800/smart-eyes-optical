@@ -2,22 +2,11 @@ import { useContext } from "react";
 import GeneralComponent from "../General/GeneralComponent";
 import { examImages, examLang, examTypes } from "../utilities";
 import { LangContext } from "../../LanguageContext";
-import Slider from "infinite-react-carousel";
-import "react-awesome-slider/dist/styles.css";
+import { Carousel } from "../ImageCarousel/Carousel";
 import "./exam.css";
 
 function EyeExam() {
   const { language } = useContext(LangContext);
-  const settings = {
-    autoplay: true,
-    autoplaySpeed: 4000,
-    dots: true,
-    virtualList: true,
-    duration: 20,
-    arrows: true,
-    pauseOnHover: false,
-    swipe: true,
-  };
 
   return (
     <>
@@ -26,15 +15,7 @@ function EyeExam() {
           <h2>{examLang?.title[language]}</h2>
           <div className="content">
             <div className="show">
-              <Slider {...settings}>
-                {examImages?.map((image, idx) => {
-                  return (
-                    <div key={idx}>
-                      <img loading="lazy" src={image} alt="Eye Exam" />
-                    </div>
-                  );
-                })}
-              </Slider>
+              <Carousel data={examImages}></Carousel>
             </div>
             <div className="text-content">
               <p

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import Navigation from "../Navigation/Navigation";
 
 const GeneralComponent = (props) => {
   useEffect(() => {
@@ -8,7 +8,7 @@ const GeneralComponent = (props) => {
   }, []);
   return (
     <>
-      <Header />
+      <Navigation />
       {props.children}
       <Footer />
     </>

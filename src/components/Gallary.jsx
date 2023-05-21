@@ -1,24 +1,15 @@
-import { gallaryImages } from "./utilities";
-import { Carousel } from "react-responsive-carousel";
-import { gallary } from "./languageData";
-import "../../node_modules/react-responsive-carousel/lib/styles/carousel.css";
 import { useContext } from "react";
+import { gallaryImages } from "./utilities";
+import { gallary } from "./languageData";
 import { LangContext } from "../LanguageContext";
+import { Carousel } from "./ImageCarousel/Carousel";
 
 function Gallary() {
   const { language } = useContext(LangContext);
   return (
     <div className="gallary container">
       <h1>{gallary.title[language]}</h1>
-      <Carousel showArrows={true}>
-        {gallaryImages.map((img, idx) => {
-          return (
-            <div key={idx}>
-              <img loading="lazy" src={img} alt="Gallery" />
-            </div>
-          );
-        })}
-      </Carousel>
+      <Carousel data={gallaryImages} />
     </div>
   );
 }

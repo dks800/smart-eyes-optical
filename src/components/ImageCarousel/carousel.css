@@ -1,0 +1,15 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 80%;
+  min-width: 0;
+}
+
+.embla__slide img {
+  box-shadow: 7px 12px 0px 0px gainsboro;
+  cursor: grab;
+}
