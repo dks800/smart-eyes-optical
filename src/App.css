@@ -23,51 +23,21 @@ h6 {
   text-transform: uppercase;
 }
 
-.carousel .slide img {
-  height: 30vw;
-  object-fit: contain;
-}
-
 .gallary.container {
-  width: 80vw;
+  width: 90vw;
   margin: auto;
-}
-
-.gallary.container img {
-  height: 200px;
-}
-
-.carousel.carousel-slider .control-arrow {
-  background: rgb(0 0 0 / 15%) !important;
-  border-radius: 10px;
-  height: 80px;
-  top: 50% !important;
-}
-
-.carousel .carousel-status {
-  right: 4vw !important;
-}
-
-.carousel .thumb {
-  width: 60px !important;
-  cursor: pointer;
-}
-
-.carousel .thumb img {
-  height: 60px;
-  object-fit: cover;
 }
 
 iframe {
   border-radius: 10px;
-  width: 95vw;
+  width: 98vw;
 }
 
 @media (max-width: 480px) {
-  .carousel .slide img {
-    height: 200px !important;
-    object-fit: cover;
+  .gallary.container img {
+    height: 200px;
   }
+
   .gallary.container {
     width: 90% !important;
   }
