@@ -3,10 +3,12 @@
 }
 .embla__container {
   display: flex;
+  gap: 10px;
 }
 .embla__slide {
   flex: 0 0 80%;
   min-width: 0;
+  overflow: hidden;
 }
 
 .embla__slide img {

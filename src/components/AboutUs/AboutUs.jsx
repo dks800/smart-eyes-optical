@@ -25,7 +25,7 @@ function AboutUs() {
   return (
     <div className="about-us container">
       <h1>{aboutUs?.title[language]}</h1>
-      <div>
+      <div className="details">
         {isWebDevice && imgUrl && (
           <img src={imgUrl} alt="about section" loading="lazy" />
         )}
@@ -40,14 +40,7 @@ function AboutUs() {
           })}
         </div>
       </div>
-      <video
-        ref={vidRef}
-        width={1000}
-        controls
-        muted={true}
-        autoPlay
-        loop
-      ></video>
+      <video ref={vidRef} controls muted={true} autoPlay loop></video>
     </div>
   );
 }

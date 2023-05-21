@@ -10,8 +10,8 @@ import { DeviceContext } from "./DeviceContext";
 import { LangContext } from "./LanguageContext";
 import { useState, useEffect } from "react";
 import { langUtils } from "./components/utilities";
-import "./App.css";
 import ErrorPage from "./components/ErrorPage";
+import "./App.css";
 
 function App() {
   const lang = localStorage.getItem("lang");

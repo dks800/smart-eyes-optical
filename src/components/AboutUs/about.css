@@ -1,5 +1,5 @@
 .about-us.container {
-  padding: 20px 10vw;
+  padding: 20px;
 }
 
 .about-us.container > div {
@@ -9,16 +9,11 @@
 
 .about-us.container > video {
   border-radius: 10px;
+  width: 100%;
 }
 
 .about-us.container img {
   height: 250px;
-  position: absolute;
-  right: 0;
-}
-
-.about-us.container .text-content {
-  width: 65vw;
 }
 
 @media (max-width: 480px) {
@@ -26,10 +21,15 @@
     width: auto;
     text-align: center;
   }
-  .about-us.container > video {
-    width: 100% !important;
-  }
   .about-us.container {
     padding: 20px 4vw !important;
   }
+}
+
+.about-us.container .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 10px;
 }
