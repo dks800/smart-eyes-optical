@@ -11,11 +11,7 @@ import { LangContext } from "./LanguageContext";
 import { useState, useEffect } from "react";
 import { langUtils } from "./components/utilities";
 import "./App.css";
-
-/*
-    TODO:
-    3. Update Social Media URL
-  */
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   const lang = localStorage.getItem("lang");
@@ -43,6 +39,7 @@ function App() {
                 <Route path="/brands" Component={Brands} />
                 <Route path="/brands/:brand" Component={Brands} />
                 <Route path="/exam" Component={EyeExam} />
+                <Route path="*" Component={ErrorPage} />
               </Routes>
             </BrowserRouter>
           </DeviceContext.Provider>

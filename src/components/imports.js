@@ -20,7 +20,7 @@ import gallary12 from "../img/gallary/gallary12.jpg";
 import call from "../img/social/call.png";
 import fb from "../img/social/fb.webp";
 import gmail from "../img/social/gmail.png";
-import insta from "../img/social/insta.webp";
+import insta from "../img/social/insta.png";
 import wa from "../img/social/whatsapp.png";
 import yt from "../img/social/yt.png";
 import exam1 from "../img/exam/exam1.jpg";

@@ -59,7 +59,7 @@ export const gallaryImages = [
 export const socialMedia = [
   {
     imgUrl: importUrl.fb,
-    url: "https://www.facebook.com/842958123gyan",
+    url: "https://www.facebook.com/842958123gyan/",
     color: "#1877f2",
   },
   {
@@ -69,7 +69,7 @@ export const socialMedia = [
   },
   {
     imgUrl: importUrl.wa,
-    url: "https://wa.me/+919727622278",
+    url: "https://wa.me/+258842958123",
     color: "#4ecc5c",
   },
   {
@@ -79,12 +79,12 @@ export const socialMedia = [
   },
   {
     imgUrl: importUrl.gmail,
-    url: "mailto:deksharma800@gmail.com",
+    url: "mailto:smarteyesopticalmaputo@gmail.com",
     color: "#ea4335",
   },
   {
     imgUrl: importUrl.call,
-    url: "tel:+919727622278",
+    url: "tel:+258829878361",
     color: "#1b1c1f",
   },
 ];

@@ -1,14 +1,11 @@
 import error from "../img/error404.gif";
-
-const style = {
-  height: "60vh",
-};
+import GeneralComponent from "./General/GeneralComponent";
 
 function ErrorPage() {
   return (
-    <>
-      <img src={error} alt="Error Page" style={style} />
-    </>
+    <GeneralComponent>
+      <img className="error-page-image" src={error} alt="Error Page" />
+    </GeneralComponent>
   );
 }
 

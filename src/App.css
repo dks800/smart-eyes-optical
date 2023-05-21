@@ -66,4 +66,12 @@ iframe {
   .gallary.container {
     width: 90% !important;
   }
+  .error-page-image {
+    width: 100%;
+    height: auto !important;
+  }
+}
+
+.error-page-image {
+  height: 60vh;
 }
