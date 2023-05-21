@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./Homepage";
-import Eyewear from "./components/Eyewear/Eyewear";
+import Eyeglasses from "./components/Eyeglasses/Eyeglasses";
 import Brands from "./components/Brands/Brands";
 import EyeExam from "./components/Eye Exam/EyeExam";
 import ContactLens from "./components/Lens/ContactLens";
@@ -14,15 +14,7 @@ import "./App.css";
 
 /*
     TODO:
-    1. Eye wear - Pending
-    2. Language:
-      v) Optometrist
-      vi) Contact US
-      vii) Eyewear
-      viii) Sun Glasses
-      ix) Contact Lens
-      x) Brand
-      xi) exam
+    3. Update Social Media URL
   */
 
 function App() {
@@ -30,7 +22,7 @@ function App() {
   const [isWebDevice, setIsWebDevice] = useState(true);
   const [language, setLanguage] = useState(!lang ? langUtils.english : lang);
   useEffect(() => {
-    let width = window?.screen?.width;
+    const width = window?.screen?.width;
     if (width < 480) setIsWebDevice(false);
     if (!lang) {
       localStorage.setItem("lang", langUtils.english);
@@ -45,7 +37,7 @@ function App() {
             <BrowserRouter>
               <Routes>
                 <Route path="/" exact Component={Homepage} />
-                <Route path="/eyewear" Component={Eyewear} />
+                <Route path="/eyeglasses" Component={Eyeglasses} />
                 <Route path="/sunglasses" Component={Sunglasses} />
                 <Route path="/contact-lens" Component={ContactLens} />
                 <Route path="/brands" Component={Brands} />

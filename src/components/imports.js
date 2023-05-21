@@ -55,6 +55,20 @@ import sunglass7 from "../img/sunglasses/sunglass7.jpg";
 import sunglass8 from "../img/sunglasses/sunglass8.jpg";
 import sunglass9 from "../img/sunglasses/sunglass9.jpg";
 import sunglass10 from "../img/sunglasses/sunglass10.jpg";
+import eyeglass1 from "../img/eyeglass/eyeglass1.jpg";
+import eyeglass2 from "../img/eyeglass/eyeglass2.jpg";
+import eyeglass3 from "../img/eyeglass/eyeglass3.jpg";
+import eyeglass4 from "../img/eyeglass/eyeglass4.jpg";
+import eyeglass5 from "../img/eyeglass/eyeglass5.jpg";
+import eyeglass6 from "../img/eyeglass/eyeglass6.jpg";
+import eyeglass7 from "../img/eyeglass/eyeglass7.jpg";
+import eyeglass9 from "../img/eyeglass/eyeglass9.jpg";
+import eyeglass10 from "../img/eyeglass/eyeglass10.jpg";
+import eyeglass11 from "../img/eyeglass/eyeglass11.jpg";
+import eyeglass12 from "../img/eyeglass/eyeglass12.jpg";
+import eyeglass13 from "../img/eyeglass/eyeglass13.jpg";
+import eyeglass14 from "../img/eyeglass/eyeglass14.jpg";
+import eyeglass15 from "../img/eyeglass/eyeglass15.jpg";
 
 export const importUrl = {
   eyeExam,
@@ -114,4 +128,18 @@ export const importUrl = {
   lens2,
   lens3,
   lens4,
+  eyeglass1,
+  eyeglass2,
+  eyeglass3,
+  eyeglass4,
+  eyeglass5,
+  eyeglass6,
+  eyeglass7,
+  eyeglass9,
+  eyeglass10,
+  eyeglass11,
+  eyeglass12,
+  eyeglass13,
+  eyeglass14,
+  eyeglass15,
 };

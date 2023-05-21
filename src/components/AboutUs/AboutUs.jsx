@@ -16,7 +16,7 @@ function AboutUs() {
     if (!isWebDevice) {
       vidRef.current.src = mobileLenseVideo;
     } else {
-      let url = require("../../img/logo-board.png");
+      const url = require("../../img/logo-board.png");
       setImgUrl(url);
       vidRef.current.src = lenseVideo;
     }

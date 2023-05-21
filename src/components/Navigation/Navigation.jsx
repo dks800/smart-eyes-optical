@@ -5,10 +5,12 @@ import { Link } from "react-router-dom";
 import NavigationLinks from "./NavigationLinks";
 import { LangContext } from "../../LanguageContext";
 import { langUtils } from "../utilities";
+import { DeviceContext } from "../../DeviceContext";
 import "./navigation.css";
 
 export default function Navigation() {
   const { language, setLanguage } = useContext(LangContext);
+  const isWebDevice = useContext(DeviceContext);
   const changeLanguage = (value) => {
     setLanguage(value);
     localStorage.setItem("lang", value);
@@ -18,7 +20,7 @@ export default function Navigation() {
       <Link to="/">
         <img src={logo} alt="Logo" height="50" loading="lazy" />{" "}
       </Link>
-      <NavigationLinks lang={language} />
+      {isWebDevice && <NavigationLinks lang={language} />}
       <div className="language" title="Change Language">
         <img src={langIcon} alt="Language" loading="lazy" />
         <select

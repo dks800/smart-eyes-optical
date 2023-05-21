@@ -82,7 +82,7 @@ import fs9 from "../../img/brands/fastrack/fs9.jpg";
 import fs10 from "../../img/brands/fastrack/fs10.jpg";
 import fsBrandLogo from "../../img/brands/fastrack/brand-logo.png";
 
-let hugoBoss = {
+const hugoBoss = {
   hbBrandLogo,
   hb1,
   hb2,
@@ -95,7 +95,7 @@ let hugoBoss = {
   hb9,
   hb10,
 };
-let montBlanc = {
+const montBlanc = {
   mbBrandLogo,
   mb1,
   mb2,
@@ -108,9 +108,21 @@ let montBlanc = {
   mb9,
   mb10,
 };
-let dg = { dgBrandLogo, dg1, dg2, dg3, dg4, dg5, dg6, dg7, dg8, dg9, dg10 };
-let prada = { prBrandLogo, pr1, pr2, pr3, pr4, pr5, pr6, pr7, pr8, pr9, pr10 };
-let tomFord = {
+const dg = { dgBrandLogo, dg1, dg2, dg3, dg4, dg5, dg6, dg7, dg8, dg9, dg10 };
+const prada = {
+  prBrandLogo,
+  pr1,
+  pr2,
+  pr3,
+  pr4,
+  pr5,
+  pr6,
+  pr7,
+  pr8,
+  pr9,
+  pr10,
+};
+const tomFord = {
   tfBrandLogo,
   tf1,
   tf2,
@@ -124,7 +136,7 @@ let tomFord = {
   tf10,
 };
 
-let tommyH = {
+const tommyH = {
   thBrandLogo,
   th1,
   th2,
@@ -138,7 +150,7 @@ let tommyH = {
   th10,
 };
 
-let fastrack = {
+const fastrack = {
   fsBrandLogo,
   fs1,
   fs2,

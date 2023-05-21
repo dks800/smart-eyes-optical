@@ -1,11 +1,13 @@
+import { useContext } from "react";
 import GeneralComponent from "../General/GeneralComponent";
-import { examImages } from "../utilities";
+import { examImages, examLang, examTypes } from "../utilities";
+import { LangContext } from "../../LanguageContext";
 import Slider from "infinite-react-carousel";
 import "react-awesome-slider/dist/styles.css";
-import { examTypes } from "../utilities";
 import "./exam.css";
 
 function EyeExam() {
+  const { language } = useContext(LangContext);
   const settings = {
     autoplay: true,
     autoplaySpeed: 4000,
@@ -21,7 +23,7 @@ function EyeExam() {
     <>
       <GeneralComponent>
         <div className="eye-exam container">
-          <h2>Eye Exam</h2>
+          <h2>{examLang?.title[language]}</h2>
           <div className="content">
             <div className="show">
               <Slider {...settings}>
@@ -35,33 +37,28 @@ function EyeExam() {
               </Slider>
             </div>
             <div className="text-content">
-              <p>
-                With highly advance equipments at
-                <strong> Smart Eyes Optical</strong>, we diagnose patients with
-                various tests as follows:
-              </p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: examLang?.description[language],
+                }}
+              ></p>
               <div className="exam-types">
                 {examTypes?.map((exam, idx) => {
                   return (
                     <div key={idx} className="ui-card">
-                      <img loading="lazy" src={exam.logo} alt="Exam Logo" />
-                      <h4>{exam.title}</h4>
-                      <p>{exam.description}</p>
+                      <img loading="lazy" src={exam?.logo} alt="Exam Logo" />
+                      <h4>{exam?.title[language]}</h4>
+                      <p>{exam?.description[language]}</p>
                     </div>
                   );
                 })}
               </div>
-
-              <p className="footer-note">
-                After the exam, we discuss exam findings with the patient and
-                recommend any necessary treatment or further testing. We may
-                also provide a prescription for glasses or contact lenses if
-                needed.&nbsp;
-                <strong>
-                  Regular eye exams are important for maintaining good eye
-                  health and detecting any potential problems early.
-                </strong>
-              </p>
+              <p
+                className="footer-note"
+                dangerouslySetInnerHTML={{
+                  __html: examLang?.footerNote[language],
+                }}
+              ></p>
             </div>
           </div>
         </div>

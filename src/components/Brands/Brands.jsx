@@ -1,17 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { useParams } from "react-router";
 import GeneralComponent from "../General/GeneralComponent";
 import ProductList from "./ProductList";
 import { brandNames } from "../data/brandData";
 import Marquee from "react-fast-marquee";
+import { LangContext } from "../../LanguageContext";
+import { brandLang } from "../utilities";
 import "./brands.css";
 
 function Brands() {
   const eyewear = useParams();
+  const { language } = useContext(LangContext);
 
   useEffect(() => {
     if (eyewear?.brand) {
-      let selectedBrand = document.querySelector(`#brand-${eyewear.brand}`);
+      const selectedBrand = document.querySelector(`#brand-${eyewear.brand}`);
       selectedBrand.scrollIntoView({
         behavior: "smooth",
       });
@@ -22,12 +25,8 @@ function Brands() {
     <>
       <GeneralComponent>
         <div className="brands container">
-          <h1>Eyewear Brands</h1>
-          <p>
-            Smart Eyes Optical, has a wide range of branded products. The top
-            ranged brands are displayed below. You can choose your favorite
-            brand from our store.
-          </p>
+          <h1>{brandLang?.title[language]}</h1>
+          <p> {brandLang?.description[language]}</p>
           <div className="brand-marquee">
             <Marquee>
               {brandNames.map((brand, index) => {
@@ -43,7 +42,7 @@ function Brands() {
               })}
             </Marquee>
           </div>
-          <ProductList displayBrandLogo={true} />
+          <ProductList displayBrandLogo={true} lang={language} />
         </div>
       </GeneralComponent>
     </>

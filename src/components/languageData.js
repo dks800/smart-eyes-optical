@@ -80,3 +80,18 @@ export const optomLang = {
     },
   ],
 };
+
+export const contactUs = {
+  title: {
+    [langUtils.english]: "Contact Us",
+    [langUtils.portugese]: "Contate-nos",
+  },
+  subTitleLeft: {
+    [langUtils.english]: "Locate Us",
+    [langUtils.portugese]: "Localize-nos",
+  },
+  subTitleRight: {
+    [langUtils.english]: "Connect with Us",
+    [langUtils.portugese]: "Conecte-se conosco",
+  },
+};

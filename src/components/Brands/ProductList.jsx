@@ -1,16 +1,16 @@
 import { brandNames } from "../data/brandData";
 import "./brands.css";
 
-function ProductList({ displayBrandLogo }) {
+function ProductList({ displayBrandLogo, lang }) {
   return (
     <div className="brand-names">
       {brandNames?.map((brand, idx) => {
         return (
-          <div key={idx} id={`brand-${brand.id}`}>
+          <div key={idx} id={`brand-${brand?.id}`}>
             {displayBrandLogo && (
               <>
                 <div className="name">
-                  <img src={brand.brandLogo} alt="Brand Logo" />
+                  <img src={brand?.brandLogo} alt="Brand Logo" />
                 </div>
               </>
             )}
@@ -19,9 +19,9 @@ function ProductList({ displayBrandLogo }) {
                 return (
                   <div className="brand-card" key={idx}>
                     <div className="image-header">
-                      <img loading="lazy" src={image.url} alt="Brand" />
+                      <img loading="lazy" src={image?.url} alt="Brand" />
                     </div>
-                    <h4>{image.title}</h4>
+                    <h4>{image?.title[lang]}</h4>
                   </div>
                 );
               })}
