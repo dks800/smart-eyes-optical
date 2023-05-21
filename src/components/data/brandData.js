@@ -1,4 +1,3 @@
-import { getMultilingualValue } from "../utilities";
 import {
   hugoBoss,
   montBlanc,

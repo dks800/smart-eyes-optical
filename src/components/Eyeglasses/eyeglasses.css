@@ -34,3 +34,14 @@
     width: 95%;
   }
 }
+
+.eye-glass.container .header-title {
+  position: relative;
+}
+.eye-glass.container .header-title > img {
+  height: 50px;
+  position: absolute;
+  right: 17%;
+  transform: rotate(20deg);
+  top: -40px;
+}

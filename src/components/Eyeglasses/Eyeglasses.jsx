@@ -5,6 +5,7 @@ import GeneralComponent from "../General/GeneralComponent";
 import { eyeglassImages, eyeglassLang } from "../utilities";
 import webVideo from "../../img/eyeglass/eyeglass-web.mp4";
 import mobileVideo from "../../img/eyeglass/eyeglass-mobile.mp4";
+import eyeGlassGIF from "../../img/eyeglass/mobile-eyewear.gif";
 import "./eyeglasses.css";
 
 function Eyeglasses() {
@@ -30,7 +31,10 @@ function Eyeglasses() {
     <>
       <GeneralComponent>
         <div className="eye-glass container">
-          <h1>{eyeglassLang?.title[language]}</h1>
+          <div className="header-title">
+            <h1>{eyeglassLang?.title[language]}</h1>
+            {!isWebDevice && <img src={eyeGlassGIF} alt="Eyeglass GIF" />}
+          </div>
           <div className="content">
             <p
               dangerouslySetInnerHTML={{

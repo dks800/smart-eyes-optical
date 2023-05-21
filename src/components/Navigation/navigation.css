@@ -39,3 +39,8 @@
   margin: 6px 0;
   border-radius: 10px;
 }
+
+.navigation select {
+  height: 40px;
+  border-radius: 10px;
+}

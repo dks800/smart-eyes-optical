@@ -6,6 +6,7 @@
   object-fit: cover;
   height: 85vh;
   width: 100%;
+  transition: all 0.2s ease;
 }
 
 .banner-name {
@@ -50,6 +51,7 @@
   .banner-items > a {
     width: auto !important;
     min-height: 40px !important;
+    padding: 5px !important;
   }
 }
 
@@ -105,7 +107,7 @@
   display: flex;
   width: 100%;
   gap: 10px;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   position: absolute;
   bottom: -10px;

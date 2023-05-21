@@ -1,7 +1,5 @@
 import { importUrl } from "./imports";
 import { brandNames } from "./data/brandData";
-import { DeviceContext } from "../DeviceContext";
-import { useContext } from "react";
 
 export const langUtils = {
   english: "en",
